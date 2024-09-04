@@ -1,0 +1,10 @@
+@use '../mixins';
+
+.App {
+  height: 100vh;
+  background-color: green;
+
+  @include mixins.max(m) {
+    background-color: red;
+  }
+}
