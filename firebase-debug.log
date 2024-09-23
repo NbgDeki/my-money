@@ -1,0 +1,96 @@
+[debug] [2024-09-19T07:49:48.396Z] ----------------------------------------------------------------------
+[debug] [2024-09-19T07:49:48.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dr250385\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-19T07:49:48.402Z] CLI Version:   13.12.0
+[debug] [2024-09-19T07:49:48.402Z] Platform:      win32
+[debug] [2024-09-19T07:49:48.402Z] Node Version:  v21.2.0
+[debug] [2024-09-19T07:49:48.403Z] Time:          Thu Sep 19 2024 09:49:48 GMT+0200 (Central European Summer Time)
+[debug] [2024-09-19T07:49:48.403Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-19T07:49:48.409Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-19T07:49:48.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-19T07:49:48.476Z] > authorizing via signed-in user (radic.dejan.nbg@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\deki programiranje\Net Ninja React\07.my-money
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2024-09-19T07:49:48.930Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-19T07:49:48.930Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-19T07:50:48.725Z] > refreshing access token with scopes: []
+[debug] [2024-09-19T07:50:48.726Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-19T07:50:48.726Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-19T07:50:48.912Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-19T07:50:48.912Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-19T07:50:48.931Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-09-19T07:50:49.550Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-09-19T07:50:49.551Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project udemy-vue-firebase-sites-3c78c (Udemy Vue Firebase Sites) 
+[info] 
+=== Firestore Setup
+[debug] [2024-09-19T07:50:59.023Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/services/firestore.googleapis.com [none]
+[debug] [2024-09-19T07:50:59.023Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/services/firestore.googleapis.com x-goog-quota-user=projects/udemy-vue-firebase-sites-3c78c
+[debug] [2024-09-19T07:51:00.056Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/services/firestore.googleapis.com 200
+[debug] [2024-09-19T07:51:00.056Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/services/firestore.googleapis.com [omitted]
+[debug] [2024-09-19T07:51:00.057Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default) [none]
+[debug] [2024-09-19T07:51:01.499Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default) 200
+[debug] [2024-09-19T07:51:01.499Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default) {"name":"projects/udemy-vue-firebase-sites-3c78c/databases/(default)","uid":"5ebd9b84-bc37-4b18-b446-6d9f568359ff","createTime":"2024-06-19T08:19:45.806443Z","updateTime":"2024-06-19T08:19:45.806443Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-09-19T06:51:03.107130Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILDPqPnCzogDMPS3go2i54YD"}
+[debug] [2024-09-19T07:51:01.499Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-09-19T07:51:01.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-19T07:51:01.500Z] > authorizing via signed-in user (radic.dejan.nbg@gmail.com)
+[debug] [2024-09-19T07:51:01.500Z] [iam] checking project udemy-vue-firebase-sites-3c78c for permissions ["firebase.projects.get"]
+[debug] [2024-09-19T07:51:01.500Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions [none]
+[debug] [2024-09-19T07:51:01.500Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions x-goog-quota-user=projects/udemy-vue-firebase-sites-3c78c
+[debug] [2024-09-19T07:51:01.500Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-19T07:51:05.556Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-09-19T07:51:05.556Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c:testIamPermissions
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-09-19T07:51:06.842Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/releases pageSize=10&pageToken=
+[debug] [2024-09-19T07:51:07.766Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/releases 200
+[debug] [2024-09-19T07:51:07.766Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/releases {"releases":[{"name":"projects/udemy-vue-firebase-sites-3c78c/releases/cloud.firestore","rulesetName":"projects/udemy-vue-firebase-sites-3c78c/rulesets/131c7b3a-b063-45d2-af25-d81ef347cc35","createTime":"2024-06-19T08:19:49.296954Z","updateTime":"2024-09-03T07:56:57.659620Z"}]}
+[debug] [2024-09-19T07:51:07.766Z] Found ruleset: projects/udemy-vue-firebase-sites-3c78c/rulesets/131c7b3a-b063-45d2-af25-d81ef347cc35
+[debug] [2024-09-19T07:51:07.766Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/rulesets/131c7b3a-b063-45d2-af25-d81ef347cc35 [none]
+[debug] [2024-09-19T07:51:08.076Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/rulesets/131c7b3a-b063-45d2-af25-d81ef347cc35 200
+[debug] [2024-09-19T07:51:08.076Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/rulesets/131c7b3a-b063-45d2-af25-d81ef347cc35 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-09-19T07:51:11.859Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-09-19T07:51:11.862Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-09-19T07:51:13.764Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-09-19T07:51:13.764Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-09-19T07:51:13.777Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-09-19T07:51:13.777Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/-/indexes {"indexes":[{"name":"projects/udemy-vue-firebase-sites-3c78c/databases/(default)/collectionGroups/transactions/indexes/CICAgOjXh4EK","queryScope":"COLLECTION","fields":[{"fieldPath":"uid","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"}]}
+[info] 
+=== Hosting Setup
+[debug] [2024-09-19T07:51:13.783Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c [none]
+[debug] [2024-09-19T07:51:17.806Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-09-19T07:51:17.806Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c (original: request to https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c failed, reason: Client network socket disconnected before secure TLS connection was established)
+[debug] [2024-09-19T07:51:18.996Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/udemy-vue-firebase-sites-3c78c
+    at RetryOperation._fn (C:\Users\dr250385\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project udemy-vue-firebase-sites-3c78c. Please make sure the project exists and your account has permission to access it.
